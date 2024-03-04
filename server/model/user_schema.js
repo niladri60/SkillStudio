@@ -3,7 +3,8 @@ const pool = require('../configDB/database');
 // Function to create users table
 async function createUsersTable() {
   try {
-    await pool.query(`
+    const connection = await pool.getConnection();
+    await connection.query(`
       CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(255) NOT NULL,
@@ -12,6 +13,7 @@ async function createUsersTable() {
       )
     `);
     console.log('Users table created successfully');
+    connection.release();
   } catch (error) {
     console.error('Error creating users table:', error);
   }

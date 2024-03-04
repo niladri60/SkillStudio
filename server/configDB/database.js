@@ -12,16 +12,16 @@ const pool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
-}, (err, connection) => {
-  if (err) {
-    console.error('Error creating connection pool:', err);
-    return;
-  }
-
-  console.log('Connected to database as user:', connection.config.user);
 });
 
-console.log("database in data")
+// Promisify the pool
+const promisePool = pool.promise();
+
+console.log("database in data");
 
 // Export the pool for use in other parts of the application
-module.exports = pool;
+const jwt = require('jsonwebtoken');
+
+const secretKey = process.env.JWT_SECRET;
+module.exports = promisePool;
+

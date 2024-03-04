@@ -2,13 +2,14 @@
 const express = require('express');
 const userroutes= require('./routes/useroutes')
 const database= require('./configDB/database')
+const bodyParser = require('body-parser')
 // Create an instance of Express
 const app = express();
 // Define the port number
-const PORT = 3000;
+const PORT = 5000;
 
 // Define a route
-app.use(express.json)
+app.use(bodyParser.json())
 //signup 
 app.use('/api',userroutes)
 // Start the server
