@@ -117,7 +117,7 @@ const Features = () => {
           </div>
           <div aria-hidden="true" className="mt-10 lg:mt-0">
             <img
-              src="https://source.unsplash.com/random/360x480"
+              src="https://images.pexels.com/photos/16129728/pexels-photo-16129728/free-photo-of-man-coding-on-pc.jpeg?auto=compress&cs=tinysrg&h=450&w=350"
               alt="Aptitude"
               className="mx-auto rounded-lg shadow-lg dark:bg-gray-500"
             />
