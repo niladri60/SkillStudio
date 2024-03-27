@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const Signup = () => {
   return (
@@ -15,9 +15,9 @@ const Signup = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
                 ></path>
               </svg>
@@ -33,7 +33,7 @@ const Signup = () => {
               </h2>
               <form action="" className="w-full">
                 <div id="input" className="flex flex-col w-full my-5">
-                  <label for="username" className="text-gray-200 mb-2">
+                  <label htmlFor="username" className="text-gray-200 mb-2">
                     Username
                   </label>
                   <input
@@ -44,7 +44,7 @@ const Signup = () => {
                   />
                 </div>
                 <div id="input" className="flex flex-col w-full my-5">
-                  <label for="email" className="text-gray-200 mb-2">
+                  <label htmlFor="email" className="text-gray-200 mb-2">
                     Email
                   </label>
                   <input
@@ -55,7 +55,7 @@ const Signup = () => {
                   />
                 </div>
                 <div id="input" className="flex flex-col w-full my-5">
-                  <label for="password" className="text-gray-200 mb-2">
+                  <label htmlFor="password" className="text-gray-200 mb-2">
                     Password
                   </label>
                   <input

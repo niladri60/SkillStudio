@@ -1,23 +1,23 @@
-import React from "react";
+// import React from "react";
 
 const Features = () => {
   return (
-    <section className="dark:bg-gray-100 dark:text-gray-800">
+    <section className="dark:bg-gray-800 dark:text-gray-200">
       <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">
+          <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-200">
             Aliquip definiebas ad est
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-600">
+          <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-[#00df9a]">
             Quando cetero his ne, eum admodum sapientem ut.
           </p>
         </div>
         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">
-              Ad vix debet docendi
+            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-[#00df9a]">
+              Aptitude
             </h3>
-            <p className="mt-3 text-lg dark:text-gray-600">
+            <p className="mt-3 text-lg dark:text-gray-200">
               Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos
               etiam regione ut, persius eripuit quo id. Sit te euismod
               tacimates.
@@ -25,7 +25,7 @@ const Features = () => {
             <div className="mt-12 space-y-12">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-[#00df9a] dark:text-black">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -43,10 +43,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Per ei quaeque sensibus
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     Ex usu illum iudico molestie. Pro ne agam facete
                     mediocritatem, ridens labore facete mea ei. Pro id apeirian
                     dignissim.
@@ -55,7 +55,7 @@ const Features = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-[#00df9a] dark:text-black">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -73,10 +73,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Cu imperdiet posidonium sed
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     Amet utinam aliquando ut mea, malis admodum ocurreret nec
                     et, elit tibique cu nec. Nec ex maluisset inciderint, ex
                     quis.
@@ -85,7 +85,7 @@ const Features = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-[#00df9a] dark:text-black">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -103,10 +103,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Nulla omittam sadipscing mel ne
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     At sed possim oporteat probatus, justo graece ne nec, minim
                     commodo legimus ut vix. Ut eos iudico quando soleat, nam
                     modus.
@@ -126,10 +126,10 @@ const Features = () => {
         <div>
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">
-                Eam nibh gloriatur ex
+              <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-[#00df9a]">
+                Coding
               </h3>
-              <p className="mt-3 text-lg dark:text-gray-600">
+              <p className="mt-3 text-lg dark:text-gray-300">
                 Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te
                 latine theophrastus. Ea his tale nibh dissentias, mei exerci
                 tamquam euripidis cu.
@@ -137,7 +137,7 @@ const Features = () => {
               <div className="mt-12 space-y-12">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-gray-600 dark:text-[#00df9a]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -155,10 +155,10 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                       Cibo augue offendit has ad
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 dark:text-gray-300">
                       An per velit appellantur, ut utinam minimum nominavi sit,
                       odio nostro habemus ne nec. Ne sonet regione contentiones
                       est.
@@ -167,7 +167,7 @@ const Features = () => {
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-gray-600 dark:text-[#00df9a]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -185,10 +185,10 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                       At eum ferri luptatum lobortis
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 dark:text-gray-300">
                       Te per quidam maiorum ocurreret, etiam delicatissimi usu
                       ad. Ne has quod periculis. Te sit primis iisque
                       efficiantur.
@@ -197,7 +197,7 @@ const Features = () => {
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-gray-600 dark:text-[#00df9a]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -215,10 +215,10 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                       Dicunt verterem evertitur eu sea
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 dark:text-gray-300">
                       Audire principes rationibus eam an, autem nominavi
                       luptatum per te. Sumo fabulas vim eu, sonet saperet
                       eleifend ut vix.
@@ -238,10 +238,10 @@ const Features = () => {
         </div>
         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">
-              Ad vix debet docendi
+            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-[#00df9a]">
+              Interview
             </h3>
-            <p className="mt-3 text-lg dark:text-gray-600">
+            <p className="mt-3 text-lg dark:text-gray-200">
               Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos
               etiam regione ut, persius eripuit quo id. Sit te euismod
               tacimates.
@@ -249,7 +249,7 @@ const Features = () => {
             <div className="mt-12 space-y-12">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md border border-[#00df9a] dark:text-[#00df9a]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -267,10 +267,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Per ei quaeque sensibus
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     Ex usu illum iudico molestie. Pro ne agam facete
                     mediocritatem, ridens labore facete mea ei. Pro id apeirian
                     dignissim.
@@ -279,7 +279,7 @@ const Features = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md border border-[#00df9a] dark:text-[#00df9a]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -297,10 +297,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Cu imperdiet posidonium sed
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     Amet utinam aliquando ut mea, malis admodum ocurreret nec
                     et, elit tibique cu nec. Nec ex maluisset inciderint, ex
                     quis.
@@ -309,7 +309,7 @@ const Features = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md border border-[#00df9a] dark:text-[#00df9a]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -327,10 +327,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="text-lg font-medium leading-6 dark:text-[#00df9a]">
                     Nulla omittam sadipscing mel ne
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 dark:text-gray-300">
                     At sed possim oporteat probatus, justo graece ne nec, minim
                     commodo legimus ut vix. Ut eos iudico quando soleat, nam
                     modus.

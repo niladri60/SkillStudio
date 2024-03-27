@@ -16,7 +16,7 @@ const Hero = () => {
             Best test platform for
           </p>
           <ReactTyped
-          className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
+          className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-[#00df9a]'
             strings={['APTITUDE', 'CODING', 'INTERVIEW']}
             typeSpeed={120}
             backSpeed={140}
