@@ -25,6 +25,7 @@ const Signup = () => {
             <h1 className="text-5xl text-[#00df9a] font-bold">
               Client Register
             </h1>
+            <p className="text-gray-400 mt-7 flex flex-wrap" style={{ maxWidth: '400px' }}>Welcome to our user registration page! Signing up is your gateway to unlocking and explore our platform.</p>
           </div>
           <div className="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
             <div className="p-10 flex flex-col w-full shadow-xl rounded-xl border border-[#00df9a]">

@@ -94,6 +94,7 @@ const Login = () => {
             <h1 className="md:text-right text-5xl text-[#00df9a] font-bold">
               Client Login
             </h1>
+            <p className="text-gray-400 text-right mt-7">This is signup page</p>
           </div>
         </div>
       </div>
