@@ -1,6 +1,16 @@
-// import React from "react";
+import { useState } from "react";
 
 const Signup = () => {
+
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(username, email, password);
+  }
+
   return (
       <div className="container px-6 mx-auto">
         <div className="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
@@ -31,7 +41,7 @@ const Signup = () => {
               <h2 className="text-3xl font-bold text-[#00df9a] text-left mb-5">
                 Signup
               </h2>
-              <form action="" className="w-full">
+              <form onSubmit={handleSubmit} className="w-full">
                 <div id="input" className="flex flex-col w-full my-5">
                   <label htmlFor="username" className="text-gray-200 mb-2">
                     Username
@@ -41,6 +51,7 @@ const Signup = () => {
                     id="username"
                     placeholder="Please choose your username"
                     className="appearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                 </div>
                 <div id="input" className="flex flex-col w-full my-5">
@@ -52,6 +63,7 @@ const Signup = () => {
                     id="email"
                     placeholder="Please choose your email"
                     className="appearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div id="input" className="flex flex-col w-full my-5">
@@ -63,11 +75,12 @@ const Signup = () => {
                     id="password"
                     placeholder="Please insert your password"
                     className="aappearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div id="button" className="flex flex-col w-full my-5">
                   <button
-                    type="button"
+                    type="submit"
                     className="w-full py-4 bg-[#00df9a] rounded-lg text-black mt-5 hover:bg-[#0f5f47] hover:text-white"
                   >
                     <div className="flex flex-row items-center justify-center">
