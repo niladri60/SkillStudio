@@ -2,7 +2,6 @@
 
 const Signup = () => {
   return (
-    <body>
       <div className="container px-6 mx-auto">
         <div className="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
           <div className="flex flex-col w-full">
@@ -108,7 +107,6 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </body>
   );
 };
 
