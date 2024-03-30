@@ -1,6 +1,15 @@
-// import React from "react";
+import { useState } from "react";
 
 const Login = () => {
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(username, password);
+  }
+
   return (
     <div className="container px-6 mx-auto">
       <div className="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
@@ -9,17 +18,18 @@ const Login = () => {
             <h2 className="text-3xl font-bold text-[#00df9a] text-left mb-5">
               Login
             </h2>
-            <form action="" className="w-full">
+            <form onSubmit={handleSubmit} className="w-full">
               <div id="input" className="flex flex-col w-full my-5">
                 <label htmlFor="username" className="text-gray-200 mb-2">
                   Username
                 </label>
                 <input
-                  type="text"
+                  type="username"
                   id="username"
                   placeholder="Please insert your username"
                   className="appearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
-                />
+                  onChange={(e) => setUsername(e.target.value)}
+                  />
               </div>
               <div id="input" className="flex flex-col w-full my-5">
                 <label htmlFor="password" className="text-gray-200 mb-2">
@@ -30,11 +40,12 @@ const Login = () => {
                   id="password"
                   placeholder="Please insert your password"
                   className="appearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div id="button" className="flex flex-col w-full my-5">
                 <button
-                  type="button"
+                  type="submit"
                   className="w-full py-4 bg-[#00df9a] rounded-lg text-black hover:bg-[#0f5f47] hover:text-white"
                 >
                   <div className="flex flex-row items-center justify-center">
