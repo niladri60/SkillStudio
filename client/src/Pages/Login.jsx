@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Login = () => {
-
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -13,6 +13,10 @@ const Login = () => {
   return (
     <div className="container px-6 mx-auto">
       <div className="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
+        <a href="/" className="absolute top-10 left-20 mt-4 ml-4">
+          <FaArrowLeft className="text-[#00df9a] text-xl" />
+        </a>
+
         <div className="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
           <div className="p-10 flex flex-col w-full shadow-xl rounded-xl border border-[#00df9a]">
             <h2 className="text-3xl font-bold text-[#00df9a] text-left mb-5">
@@ -29,7 +33,7 @@ const Login = () => {
                   placeholder="Please insert your username"
                   className="appearance-none bg-[#1f201f] rounded-lg px-4 py-3 placeholder-[#879892] focus:outline-none focus:ring-2 focus:ring-[#00df9a] focus:shadow-lg text-[#00df9a]"
                   onChange={(e) => setUsername(e.target.value)}
-                  />
+                />
               </div>
               <div id="input" className="flex flex-col w-full my-5">
                 <label htmlFor="password" className="text-gray-200 mb-2">
@@ -104,7 +108,9 @@ const Login = () => {
           <h1 className="md:text-right text-5xl text-[#00df9a] font-bold">
             Client Login
           </h1>
-          <p className="text-gray-400 text-right mt-7">Access your account here.</p>
+          <p className="text-gray-400 text-right mt-7">
+            Access your account here.
+          </p>
         </div>
       </div>
     </div>
