@@ -24,7 +24,8 @@ const Categories = () => {
                 2
               </div>
               <p className="text-2xl font-semibold">
-                <b>Take the Assessment. </b>Sure, I'll answer each question thoughtfully and succinctly. Let&apos;s get started!
+                <b>Take the Assessment. </b>Sure, I&apos;ll answer each question
+                thoughtfully and succinctly. Let&apos;s get started!
               </p>
             </div>
             <div className="flex flex-col p-8 space-y-4 rounded-md border border-[#00df9a]">
@@ -32,7 +33,8 @@ const Categories = () => {
                 3
               </div>
               <p className="text-2xl font-semibold">
-                <b>Receive Personalized Feedback. </b>Get insights, excel, and improve with tailored recommendations.
+                <b>Receive Personalized Feedback. </b>Get insights, excel, and
+                improve with tailored recommendations.
               </p>
             </div>
           </div>
