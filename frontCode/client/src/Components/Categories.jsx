@@ -7,7 +7,7 @@ const Categories = () => {
             How it works
           </span>
           <h2 className="text-5xl font-bold text-center dark:text-gray-500">
-            Building with Mamba is simple
+            Our Assesment taking procedure
           </h2>
           <div className="grid gap-6 my-16 lg:grid-cols-3">
             <div className="flex flex-col p-8 space-y-4 rounded-md border border-[#00df9a]">
@@ -15,7 +15,8 @@ const Categories = () => {
                 1
               </div>
               <p className="text-2xl font-semibold">
-                <b>Nulla.</b>Nostrum, corrupti blanditiis. Illum, architecto?
+                <b>Choose Your Test Category. </b>Explore our comprehensive test
+                categories and choose the one that best suits your aspirations.
               </p>
             </div>
             <div className="flex flex-col p-8 space-y-4 rounded-md dark:bg-[#00df9a] text-black">
@@ -23,8 +24,7 @@ const Categories = () => {
                 2
               </div>
               <p className="text-2xl font-semibold">
-                <b>Accusantium.</b>Vitae saepe atque neque sunt eius dolor
-                veniam alias debitis?
+                <b>Take the Assessment. </b>Sure, I'll answer each question thoughtfully and succinctly. Let&apos;s get started!
               </p>
             </div>
             <div className="flex flex-col p-8 space-y-4 rounded-md border border-[#00df9a]">
@@ -32,8 +32,7 @@ const Categories = () => {
                 3
               </div>
               <p className="text-2xl font-semibold">
-                <b>Maxime.</b>Expedita temporibus culpa reprehenderit doloribus
-                consectetur odio!
+                <b>Receive Personalized Feedback. </b>Get insights, excel, and improve with tailored recommendations.
               </p>
             </div>
           </div>
