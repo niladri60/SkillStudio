@@ -57,7 +57,7 @@ export default function MyModal3() {
                   </div>
 
                   <div className="mt-4">
-                    <a href="">
+                    <a href="/interviewPage">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-[#67dab6] px-4 py-2 text-sm font-medium text-gray-900 hover:bg-[#00df9a] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00df9a] focus-visible:ring-offset-2"
