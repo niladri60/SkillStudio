@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 import AptitudePage from "./Pages/AptitudePage";
 import CodingPage from "./Pages/CodePage";
 import InterviewPage from "./Pages/InterviewPage";
-import CodingUpload from "./Components/CodingComponents/CodingUpload"; // Ensure correct path
+import CodingUpload from "./Components/CodingComponents/CodingUpload";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
