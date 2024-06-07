@@ -25,22 +25,34 @@ const Navbar = () => {
       </h1>
       <ul className="hidden md:flex">
         <li className="p-4">
-          <a href="#" onClick={() => scrollToSection("home")}>
+          <a
+            className="relative text-white hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00df9a] before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-[-4px] before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00df9a] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-[-4px] after:right-[50%]"
+            onClick={() => scrollToSection("home")}
+          >
             Home
           </a>
         </li>
         <li className="p-4">
-          <a href="#" onClick={() => scrollToSection("Features")}>
+          <a
+            className="relative text-white hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00df9a] before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-[-4px] before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00df9a] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-[-4px] after:right-[50%]"
+            onClick={() => scrollToSection("Features")}
+          >
             Categories
           </a>
         </li>
         <li className="p-4">
-          <a href="#" onClick={() => scrollToSection("Faqs")}>
+          <a
+            className="relative text-white hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00df9a] before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-[-4px] before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00df9a] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-[-4px] after:right-[50%]"
+            onClick={() => scrollToSection("Faqs")}
+          >
             About
           </a>
         </li>
         <li className="p-4">
-          <a href="#" onClick={() => scrollToSection("Contact")}>
+          <a
+            className="relative text-white hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00df9a] before:origin-center before:h-[2px] before:w-0 hover:before:w-[50%] before:bottom-[-4px] before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00df9a] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-[-4px] after:right-[50%]"
+            onClick={() => scrollToSection("Contact")}
+          >
             Contact
           </a>
         </li>
