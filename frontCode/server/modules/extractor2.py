@@ -53,7 +53,7 @@ def insert_data_from_csv(filename, cursor):
 # Main function
 def main():
     # CSV file containing the data
-    csv_filename = 'coding_interview_problems.csv'
+    csv_filename = 'frontcode\coding_problems.csv'
 
     # Connect to the MySQL database
     conn = connect_to_database()

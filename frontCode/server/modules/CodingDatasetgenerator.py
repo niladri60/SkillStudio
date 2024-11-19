@@ -6,97 +6,97 @@ fake = Faker()
 
 def generate_statement(topic):
     if topic == "array":
-        return "Given an array of integers {}, return the sum of all elements."
+        return "Given an array of integers, return the sum of all elements."
     elif topic == "linkedlist":
-        return "Given a linked list of integers {}, find the sum of all elements."
+        return "Given a linked list of integers, find the sum of all elements."
     elif topic == "hashing":
-        return "Given a dictionary of integers {}, return the sum of all values."
+        return "Given a dictionary of integers, return the sum of all values."
     elif topic == "dynamicprogramming":
-        return "Given a set of tasks {}, find the maximum total value given constraints."
+        return "Given a set of tasks , find the maximum total value given constraints."
     elif topic == "string":
-        return "Given a string '{}', reverse it."
+        return "Given a string '', reverse it."
     elif topic == "math":
-        return "Write a function to calculate the factorial of {}."
+        return "Write a function to calculate the factorial of ."
     elif topic == "recursion":
-        return "Write a function to calculate the Fibonacci sequence up to index {}."
+        return "Write a function to calculate the Fibonacci sequence up to index ."
     elif topic == "datetime":
-        return "Given a date '{}', calculate the next day."
+        return "Given a date '', calculate the next day."
     elif topic == "graph":
-        return "Given a list of intervals {}, merge overlapping intervals."
+        return "Given a list of intervals , merge overlapping intervals."
     elif topic == "sorting":
-        return "Write a function to sort a list of integers {} in ascending order."
+        return "Write a function to sort a list of integers  in ascending order."
     elif topic == "statistics":
-        return "Given a list of ages {}, calculate the average age."
+        return "Given a list of ages , calculate the average age."
     elif topic == "geometry":
-        return "Given a list of cities {}, return the city with the highest population."
+        return "Given a list of cities , return the city with the highest population."
     elif topic == "searching":
-        return "Given an array of integers {}, find the maximum element."
+        return "Given an array of integers , find the maximum element."
     elif topic == "tree":
-        return "Given a binary tree {}, return its maximum depth."
+        return "Given a binary tree , return its maximum depth."
     elif topic == "stringprocessing":
-        return "Given a string '{}', count the occurrences of a specific character."
+        return "Given a string '', count the occurrences of a specific character."
     elif topic == "set":
-        return "Given two strings '{}' and '{}', check if they are anagrams."
+        return "Given two strings '' and '', check if they are anagrams."
     elif topic == "set":
-        return "Implement a function to check if a number {} is prime."
+        return "Implement a function to check if a number  is prime."
     elif topic == "math":
-        return "Implement a function to check if a number {} is even or odd."
+        return "Implement a function to check if a number  is even or odd."
     elif topic == "math":
-        return "Write a function to find the square root of {}."
+        return "Write a function to find the square root of ."
     elif topic == "math":
-        return "Implement a function to convert a decimal number {} to binary."
+        return "Implement a function to convert a decimal number  to binary."
     elif topic == "array":
-        return "Given a list of words {}, return the longest word."
+        return "Given a list of words , return the longest word."
     elif topic == "array":
-        return "Given a list of names {}, return the most common name."
+        return "Given a list of names , return the most common name."
     elif topic == "array":
-        return "Given a list of temperatures {}, calculate the average temperature."
+        return "Given a list of temperatures , calculate the average temperature."
     elif topic == "array":
-        return "Given an array of integers {}, find the length of the longest subarray with a sum equal to k."
+        return "Given an array of integers , find the length of the longest subarray with a sum equal to k."
     elif topic == "linkedlist":
-        return "Given a linked list {}, determine if it has a cycle."
+        return "Given a linked list , determine if it has a cycle."
     elif topic == "string":
-        return "Given a string '{}', find the longest palindromic substring."
+        return "Given a string '', find the longest palindromic substring."
     elif topic == "array":
-        return "Given a matrix {}, rotate the matrix by 90 degrees clockwise."
+        return "Given a matrix , rotate the matrix by 90 degrees clockwise."
     elif topic == "array":
-        return "Given a list of intervals {}, insert a new interval and merge if necessary."
+        return "Given a list of intervals , insert a new interval and merge if necessary."
     elif topic == "string":
-        return "Given a string '{}', find the longest common prefix among an array of strings."
+        return "Given a string '', find the longest common prefix among an array of strings."
     elif topic == "array":
-        return "Given a sorted array {}, find the starting and ending position of a given target value."
+        return "Given a sorted array , find the starting and ending position of a given target value."
     elif topic == "array":
-        return "Given a 2D grid of 1s and 0s {}, find the number of distinct islands."
+        return "Given a 2D grid of 1s and 0s , find the number of distinct islands."
     elif topic == "array":
-        return "Given a list of intervals {}, find the minimum number of rooms required for all meetings."
+        return "Given a list of intervals , find the minimum number of rooms required for all meetings."
     elif topic == "array":
-        return "Given a list of integers {}, return the kth largest element."
+        return "Given a list of integers , return the kth largest element."
     elif topic == "array":
-        return "Given a sorted array {}, find the closest elements to a given target."
+        return "Given a sorted array , find the closest elements to a given target."
     elif topic == "tree":
-        return "Given a binary tree {}, return the level order traversal of its nodes' values."
+        return "Given a binary tree , return the level order traversal of its nodes' values."
     elif topic == "array":
-        return "Given a list of intervals {}, return the maximum number of overlapping intervals."
+        return "Given a list of intervals , return the maximum number of overlapping intervals."
     elif topic == "tree":
-        return "Given a binary tree {}, return the inorder traversal of its nodes' values."
+        return "Given a binary tree , return the inorder traversal of its nodes' values."
     elif topic == "string":
-        return "Given a string '{}', find all possible permutations."
+        return "Given a string '', find all possible permutations."
     elif topic == "array":
-        return "Given a list of integers {}, return the maximum product of three numbers."
+        return "Given a list of integers , return the maximum product of three numbers."
     elif topic == "array":
-        return "Given a matrix {}, return the diagonal elements."
+        return "Given a matrix , return the diagonal elements."
     elif topic == "array":
-        return "Given a list of integers {}, return the product of all except itself for each element."
+        return "Given a list of integers , return the product of all except itself for each element."
     elif topic == "array":
-        return "Given a list of integers {}, find the longest increasing subsequence."
+        return "Given a list of integers , find the longest increasing subsequence."
     elif topic == "array":
-        return "Given a list of intervals {}, return the sum of all non-overlapping intervals."
+        return "Given a list of intervals , return the sum of all non-overlapping intervals."
     elif topic == "array":
-        return "Given a list of words {}, return the number of valid word squares."
+        return "Given a list of words , return the number of valid word squares."
     elif topic == "array":
-        return "Given a list of integers {}, find the maximum consecutive ones."
+        return "Given a list of integers , find the maximum consecutive ones."
     elif topic == "array":
-        return "Given a list of intervals {}, return the total covered range."
+        return "Given a list of intervals , return the total covered range."
     else:
         return "Valid statement"
 def generate_example(statement, topic):
