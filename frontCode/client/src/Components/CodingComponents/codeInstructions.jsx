@@ -1,8 +1,18 @@
 import { Fieldset, Button, Checkbox } from "@headlessui/react";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-const CodeInstructions = () => {
+const CodeInstructions = ({ setAcceptedInstructions }) => {
   const [enabled, setEnabled] = useState(false);
+
+  const handleProceed = () => {
+    if (enabled) {
+      setAcceptedInstructions(true);
+    } else {
+      alert("Please accept the instructions before proceeding.");
+    }
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black py-8 sm:py-16">
       <h1 className="text-2xl font-bold leading-7 text-gray-200 mb-8 sm:mb-10 sm:truncate sm:text-3xl sm:tracking-tight relative cursor-pointer hover:text-gray-400 transition-all ease-in-out before:transition-all before:duration-700 before:absolute before:bg-[#00df9a] before:origin-center before:h-[5px] before:w-0 hover:before:w-[70%] before:bottom-[-2px] before:left-1/2 before:-translate-x-1/2 flex justify-center py-2">
@@ -10,7 +20,7 @@ const CodeInstructions = () => {
       </h1>
       <div className="w-full max-w-3xl px-4">
         <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-10">
-          <p className="text-white">
+        <p className="text-white">
             <ol className="list-decimal list-inside space-y-4">
               <li>
                 You would be provided with a user name and password. You need to
@@ -67,10 +77,10 @@ const CodeInstructions = () => {
             <Checkbox
               checked={enabled}
               onChange={setEnabled}
-              className="group block size-4 rounded border bg-white data-[checked]:bg-blue-500"
+              className="group block size-4 rounded border data-[checked]:bg-[#00df9a]"
             >
               <svg
-                className="stroke-white opacity-0 group-data-[checked]:opacity-100"
+                className="stroke-black opacity-0 group-data-[checked]:opacity-100"
                 viewBox="0 0 14 14"
                 fill="none"
               >
@@ -87,7 +97,10 @@ const CodeInstructions = () => {
             </span>
           </div>
 
-          <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-white hover:bg-sky-500 active:bg-sky-700 mt-4">
+          <Button
+            onClick={handleProceed}
+            className="rounded bg-[#00df9a] py-2 px-4 text-sm text-black hover:bg-[#00df98bb] active:bg-[#00df9a] mt-4"
+          >
             Proceed
           </Button>
         </Fieldset>
@@ -95,5 +108,10 @@ const CodeInstructions = () => {
     </div>
   );
 };
+
+CodeInstructions.propTypes = {
+  setAcceptedInstructions: PropTypes.func.isRequired,
+};
+
 
 export default CodeInstructions;

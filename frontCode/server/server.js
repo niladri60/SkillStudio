@@ -25,7 +25,7 @@ app.use('/app',aptiroutes)
 app.use('/app',codingroutes)
 app.use('/app',testroutes)
 // Start the server
-app.get('/home',(req,res)=>{
+app.get('/home',(_req,res)=>{
     res.json({ message: "hello" });
 })
 app.listen(PORT, () => {
