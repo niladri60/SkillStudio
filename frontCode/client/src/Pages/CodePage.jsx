@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import CodeInstructions from "../Components/CodingComponents/codeInstructions";
 import CodingQuestion from "../Components/CodingComponents/CodingQuestions";
+import CodeEditor from "../Components/CodingComponents/CodeEditor";
 
 const CodePage = () => {
   const [codeContent, setCodeContent] = useState(null);
@@ -27,17 +28,18 @@ const CodePage = () => {
   };
 
   return (
-    <div className="code-page">
-      {acceptedInstructions ? (
-        <>
-          {/* Display Coding Problem */}
-          <CodingQuestion codeContent={codeContent} />
-        </>
-      ) : (
-        <CodeInstructions setAcceptedInstructions={setAcceptedInstructions} />
-      )}
-    </div>
+    <CodeEditor />
   );
 };
 
 export default CodePage;
+
+
+// {acceptedInstructions ? (
+//   <>
+//     {/* Display Coding Problem */}
+//     <CodingQuestion codeContent={codeContent} />
+//   </>
+// ) : (
+//   <CodeInstructions setAcceptedInstructions={setAcceptedInstructions} />
+// )}
