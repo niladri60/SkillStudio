@@ -16,7 +16,7 @@ const Navbar = ({ userLang, setUserLang, userTheme, setUserTheme, fontSize, setF
     
     return (
         <div className="navbar">
-            <h1>Skill Studio Compiler</h1>
+            <h1 className="text-3xl font-bold text-center">Skill Studio Compiler</h1>
             <Select
                 options={languages}
                 value={languages.find(lang => lang.value === userLang)}
