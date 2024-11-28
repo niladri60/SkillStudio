@@ -8,6 +8,7 @@ import AptitudePage from "./Pages/AptitudePage";
 import CodingPage from "./Pages/CodePage";
 import InterviewPage from "./Pages/InterviewPage";
 import CodingUpload from "./Components/CodingComponents/CodingUpload";
+import SolveCoding from "./Components/CodingComponents/SolveCoding";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -27,6 +28,7 @@ function App() {
           <Route path="/codingExam" element={<CodingPage />} />
           <Route path="/interviewPage" element={<InterviewPage />} />
           <Route path="/codingQuestionUpload" element={<CodingUpload />} />
+          <Route path="/solve" element={<SolveCoding />} />
         </Routes>
       </Router>
     </>
