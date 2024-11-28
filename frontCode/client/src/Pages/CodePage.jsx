@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CodeInstructions from "../Components/CodingComponents/codeInstructions";
-import CodingQuestion from "../Components/CodingComponents/CodingQuestions";
-// import CodeEditor from "../Components/CodingComponents/CodeEditor";
+import QuestionList from "../Components/CodingComponents/QuestionList";
 
 const CodePage = () => {
-  const [codeContent, setCodeContent] = useState(null);
+  const [codeContent, setCodeContent] = useState(null); // To store coding question data
   const [acceptedInstructions, setAcceptedInstructions] = useState(false); // Track instructions acceptance
+  const [loading, setLoading] = useState(false); // Track loading state
+  const [error, setError] = useState(null); // Track errors
 
   useEffect(() => {
     if (acceptedInstructions) {
@@ -15,6 +16,8 @@ const CodePage = () => {
   }, [acceptedInstructions]);
 
   const fetchCode = async () => {
+    setLoading(true);
+    setError(null);
     try {
       const response = await axios.get("http://localhost:5000/app/codingproblem");
       if (response.status === 200) {
@@ -22,18 +25,23 @@ const CodePage = () => {
       } else {
         throw new Error(`Error: ${response.status}`);
       }
-    } catch (error) {
-      console.error("Error fetching data:", error.message || error);
+    } catch (err) {
+      setError(err.message || "Something went wrong!");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="code-page">
       {acceptedInstructions ? (
-        <>
-          {/* Display Coding Problem */}
-          <CodingQuestion codeContent={codeContent} />
-        </>
+        loading ? (
+          <p>Loading...</p>
+        ) : error ? (
+          <p className="text-red-500">{error}</p>
+        ) : (
+          <QuestionList codeContent={codeContent} />
+        )
       ) : (
         <CodeInstructions setAcceptedInstructions={setAcceptedInstructions} />
       )}
@@ -42,5 +50,3 @@ const CodePage = () => {
 };
 
 export default CodePage;
-
-

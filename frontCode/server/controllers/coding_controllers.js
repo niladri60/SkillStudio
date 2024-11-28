@@ -5,7 +5,7 @@ const {createUploadCodingQuestionTable}= require('../model/coding_schema')
 const getCodingQuestion = asyncHandler(async (_req, res) => {
     try {
       // Query the database to get a single coding question
-      const [row] = await pool.query('SELECT * FROM coding_problems ORDER BY RAND() LIMIT 1');
+      const [row] = await pool.query('SELECT * FROM coding_problems ORDER BY RAND() LIMIT 5');
       
       // Send the single coding question as response
       res.status(200).json(row[0]); // Assuming the query returns an array with a single row
